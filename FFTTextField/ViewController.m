@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UITextField+FFT_Category.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 <
@@ -32,10 +33,13 @@
     
     [self.view addSubview:fd];
     
-    fd.frame = CGRectMake(100, 100, 100, 30);
+    fd.frame = CGRectMake(100, 100, 200, 30);
     
     fd.borderStyle = UITextBorderStyleRoundedRect;
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    return YES;
+}
 
 @end
