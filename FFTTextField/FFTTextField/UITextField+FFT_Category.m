@@ -126,28 +126,11 @@ static void fft_exchangeMethod(Class originalClass, SEL originalSel, Class repla
         for (char c = 'a'; c < 'z' ; c++) {
             low_string = [low_string stringByAppendingString:[NSString stringWithFormat:@"%c", c]];
         }
-        if (filter_string.length > 0) {
-            filter_string = [filter_string stringByAppendingString:low_string];
-        }else {
-            filter_string = low_string;
-        }
+        filter_string = [filter_string stringByAppendingString:low_string];
     }
     
-    if (type & FFTInputTypeNumber) {
-        if (filter_string.length > 0) {
-            filter_string = [filter_string stringByAppendingString:@"0123456789"];
-        }else {
-            filter_string = @"0123456789";
-        }
-    }
-    
-    if (type & FFTInputTypeCustom) {
-        if (filter_string.length > 0) {
-            filter_string = [filter_string stringByAppendingString:[self.fft_enableInputs componentsJoinedByString:@""]];
-        }else {
-            filter_string = [self.fft_enableInputs componentsJoinedByString:@""];
-        }
-    }
+    if (type & FFTInputTypeNumber) filter_string = [filter_string stringByAppendingString:@"0123456789"];
+    if (type & FFTInputTypeCustom) filter_string = [filter_string stringByAppendingString:[self.fft_enableInputs componentsJoinedByString:@""]];
     
     if (filter_string) {
         NSCharacterSet *characterSet = [NSCharacterSet characterSetWithCharactersInString:filter_string];
