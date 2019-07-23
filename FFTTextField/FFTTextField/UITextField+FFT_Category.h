@@ -11,10 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, FFTInputType) {
-    FFTInputTypeCustom = 0,
-    FFTInputTypeNumber = 1 << 0,
-    FFTInputTypeCapitalLetters = 1 << 1,
-    FFTInputTypeLowercaseLetters = 1 << 2,
+    FFTInputTypeCustom = 1 << 0,
+    FFTInputTypeNumber = 1 << 1,
+    FFTInputTypeCapitalLetters = 1 << 2,
+    FFTInputTypeLowercaseLetters = 1 << 3,
     FFTInputTypeLetters = FFTInputTypeCapitalLetters | FFTInputTypeLowercaseLetters,
 };
 
@@ -24,7 +24,8 @@ typedef NS_ENUM(NSUInteger, FFTInputType) {
  */
 @property (nonatomic, assign) NSUInteger fft_max;
 /**
- 允许输入类型
+ 允许输入类型 可自由组合，例如：FFTInputTypeNumber | FFTInputTypeCapitalLetters
+ 筛选的字符可能会有重复的  暂时未做考虑
  */
 @property (nonatomic, assign) FFTInputType fft_inputType;
 /**

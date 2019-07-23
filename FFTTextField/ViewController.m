@@ -31,7 +31,9 @@
     
     fd.fft_max = 4;
     
-    fd.fft_inputType = FFTInputTypeLetters;
+    fd.fft_inputType = FFTInputTypeLetters | FFTInputTypeCustom;
+    
+    fd.fft_enableInputs = @[@"这是一段测试文字"];
     
     [self.view addSubview:fd];
     

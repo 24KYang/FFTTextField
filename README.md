@@ -19,5 +19,28 @@ textField.fft_max = 5;
 //FFTInputTypeCapitalLetters    大写字母
 //FFTInputTypeLowercaseLetters  小写字母
 //FFTInputTypeLetters           大小写字母
-fd.fft_inputType = FFTInputTypeLetters;
 ```
+
+2.1 输入纯数字
+```
+fd.fft_inputType = FFTInputTypeNumber;
+```
+
+2.2 输入大写字母
+```
+fd.fft_inputType = FFTInputTypeCapitalLetters;
+```
+
+2.3 输入小写字母
+```
+fd.fft_inputType = FFTInputTypeLowercaseLetters;
+```
+
+2.3 自由组合
+```
+fd.fft_inputType = FFTInputTypeLetters | FFTInputTypeCustom;
+
+fd.fft_enableInputs = @[@"这是一段测试文字"];
+```
+
+### 3、设置单位

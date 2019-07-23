@@ -120,6 +120,7 @@ static void fft_exchangeMethod(Class originalClass, SEL originalSel, Class repla
         }
         filter_string = cap_string;
     }
+    
     if (type & FFTInputTypeLowercaseLetters) {
         NSString *low_string = @"";
         for (char c = 'a'; c < 'z' ; c++) {
@@ -132,10 +133,20 @@ static void fft_exchangeMethod(Class originalClass, SEL originalSel, Class repla
         }
     }
     
-    if (type == FFTInputTypeNumber) {
-        filter_string = @"0123456789";
-    }else if (type == FFTInputTypeCustom) {
-        filter_string = [self.fft_enableInputs componentsJoinedByString:@""];
+    if (type & FFTInputTypeNumber) {
+        if (filter_string.length > 0) {
+            filter_string = [filter_string stringByAppendingString:@"0123456789"];
+        }else {
+            filter_string = @"0123456789";
+        }
+    }
+    
+    if (type & FFTInputTypeCustom) {
+        if (filter_string.length > 0) {
+            filter_string = [filter_string stringByAppendingString:[self.fft_enableInputs componentsJoinedByString:@""]];
+        }else {
+            filter_string = [self.fft_enableInputs componentsJoinedByString:@""];
+        }
     }
     
     if (filter_string) {
