@@ -5,7 +5,7 @@
 
 引入头文件`UITextField+FFT_Category.h`
 
-<font color=#7E7129>签代理~签代理~签代理</font>
+<font color="#dd0000">签代理!!!  签代理!!!  签代理!!!</font><br />
 
 ### 1、一行代码设置输入框限制最大位数
 
