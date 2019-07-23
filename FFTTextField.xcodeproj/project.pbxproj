@@ -16,6 +16,7 @@
 		2F5033A922E0933E00224801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5033A822E0933E00224801 /* main.m */; };
 		2F5033B322E0933E00224801 /* FFTTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5033B222E0933E00224801 /* FFTTextFieldTests.m */; };
 		2F5033BE22E0933E00224801 /* FFTTextFieldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5033BD22E0933E00224801 /* FFTTextFieldUITests.m */; };
+		611B2972D43AB6C2F2393BE7 /* libPods-FFTTextField.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F55334C2B2A7CDF1F856228 /* libPods-FFTTextField.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F55334C2B2A7CDF1F856228 /* libPods-FFTTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFTTextField.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1445D1E4612E38FC7A02B942 /* Pods-FFTTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFTTextField.release.xcconfig"; path = "Target Support Files/Pods-FFTTextField/Pods-FFTTextField.release.xcconfig"; sourceTree = "<group>"; };
 		2F0F8D3822E093D200898CEF /* UITextField+FFT_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+FFT_Category.h"; sourceTree = "<group>"; };
 		2F0F8D3922E093D200898CEF /* UITextField+FFT_Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FFT_Category.m"; sourceTree = "<group>"; };
 		2F50339622E0933C00224801 /* FFTTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFTTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +57,7 @@
 		2F5033B922E0933E00224801 /* FFTTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFTTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5033BD22E0933E00224801 /* FFTTextFieldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFTTextFieldUITests.m; sourceTree = "<group>"; };
 		2F5033BF22E0933E00224801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3785ECD3A5B935EA77AED31 /* Pods-FFTTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFTTextField.debug.xcconfig"; path = "Target Support Files/Pods-FFTTextField/Pods-FFTTextField.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611B2972D43AB6C2F2393BE7 /* libPods-FFTTextField.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,8 @@
 				2F5033B122E0933E00224801 /* FFTTextFieldTests */,
 				2F5033BC22E0933E00224801 /* FFTTextFieldUITests */,
 				2F50339722E0933C00224801 /* Products */,
+				A7AF53708E00FB7473BFC5B1 /* Pods */,
+				E167236C11E3806628589988 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +152,24 @@
 			path = FFTTextField;
 			sourceTree = "<group>";
 		};
+		A7AF53708E00FB7473BFC5B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3785ECD3A5B935EA77AED31 /* Pods-FFTTextField.debug.xcconfig */,
+				1445D1E4612E38FC7A02B942 /* Pods-FFTTextField.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E167236C11E3806628589988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F55334C2B2A7CDF1F856228 /* libPods-FFTTextField.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F5033C222E0933E00224801 /* Build configuration list for PBXNativeTarget "FFTTextField" */;
 			buildPhases = (
+				5E50845A06A9E4F1B0E6C889 /* [CP] Check Pods Manifest.lock */,
 				2F50339222E0933C00224801 /* Sources */,
 				2F50339322E0933C00224801 /* Frameworks */,
 				2F50339422E0933C00224801 /* Resources */,
@@ -269,6 +295,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E50845A06A9E4F1B0E6C889 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FFTTextField-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F50339222E0933C00224801 /* Sources */ = {
@@ -447,6 +498,7 @@
 		};
 		2F5033C322E0933E00224801 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3785ECD3A5B935EA77AED31 /* Pods-FFTTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +517,7 @@
 		};
 		2F5033C422E0933E00224801 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1445D1E4612E38FC7A02B942 /* Pods-FFTTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
