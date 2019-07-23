@@ -31,6 +31,8 @@
     
     fd.fft_max = 4;
     
+    fd.fft_inputType = FFTInputTypeLetters;
+    
     [self.view addSubview:fd];
     
     fd.frame = CGRectMake(100, 100, 200, 30);
