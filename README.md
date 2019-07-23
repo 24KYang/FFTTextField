@@ -52,5 +52,3 @@ textField.fft_inputType = FFTInputTypeLetters | FFTInputTypeCustom;
 
 textField.fft_enableInputs = @[@"这是一段测试文字"];
 ```
-
-### 3、设置单位
