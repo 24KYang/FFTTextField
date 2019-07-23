@@ -5,7 +5,7 @@
 
 引入头文件`UITextField+FFT_Category.h`
 
-<font color="#dd0000">签代理!!!  签代理!!!  签代理!!!</font><br />
+**所有功能可用的前提是设置代理，如果不设置，一切都是浮云**
 
 ### 1、一行代码设置输入框限制最大位数
 
@@ -25,24 +25,32 @@ textField.fft_max = 5;
 
 2.1 输入纯数字
 ```
-fd.fft_inputType = FFTInputTypeNumber;
+textField.delegate = self;
+
+textField.fft_inputType = FFTInputTypeNumber;
 ```
 
 2.2 输入大写字母
 ```
-fd.fft_inputType = FFTInputTypeCapitalLetters;
+textField.delegate = self;
+
+textField.fft_inputType = FFTInputTypeCapitalLetters;
 ```
 
 2.3 输入小写字母
 ```
-fd.fft_inputType = FFTInputTypeLowercaseLetters;
+textField.delegate = self;
+
+textField.fft_inputType = FFTInputTypeLowercaseLetters;
 ```
 
 2.3 自由组合
 ```
-fd.fft_inputType = FFTInputTypeLetters | FFTInputTypeCustom;
+textField.delegate = self;
 
-fd.fft_enableInputs = @[@"这是一段测试文字"];
+textField.fft_inputType = FFTInputTypeLetters | FFTInputTypeCustom;
+
+textField.fft_enableInputs = @[@"这是一段测试文字"];
 ```
 
 ### 3、设置单位
