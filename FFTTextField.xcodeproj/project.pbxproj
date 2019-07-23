@@ -158,7 +158,6 @@
 				B3785ECD3A5B935EA77AED31 /* Pods-FFTTextField.debug.xcconfig */,
 				1445D1E4612E38FC7A02B942 /* Pods-FFTTextField.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -511,7 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FFT.FFTTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -530,7 +529,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FFT.FFTTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
