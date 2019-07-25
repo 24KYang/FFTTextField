@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F5977B322E9F08B00FC1025 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977B222E9F08B00FC1025 /* AppDelegate.m */; };
+		2F5977B622E9F08B00FC1025 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977B522E9F08B00FC1025 /* ViewController.m */; };
+		2F5977B922E9F08B00FC1025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5977B722E9F08B00FC1025 /* Main.storyboard */; };
+		2F5977BB22E9F08C00FC1025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5977BA22E9F08C00FC1025 /* Assets.xcassets */; };
+		2F5977BE22E9F08C00FC1025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5977BC22E9F08C00FC1025 /* LaunchScreen.storyboard */; };
+		2F5977C122E9F08C00FC1025 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977C022E9F08C00FC1025 /* main.m */; };
+		2F5977CB22E9F08C00FC1025 /* FFTTextField_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977CA22E9F08C00FC1025 /* FFTTextField_OCTests.m */; };
+		2F5977D622E9F08C00FC1025 /* FFTTextField_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977D522E9F08C00FC1025 /* FFTTextField_OCUITests.m */; };
+		2F5977E622E9F12900FC1025 /* UITextField+FFT_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977E422E9F12900FC1025 /* UITextField+FFT_Category.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F5977C722E9F08C00FC1025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F5977A622E9F08B00FC1025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F5977AD22E9F08B00FC1025;
+			remoteInfo = "FFTTextField-OC";
+		};
+		2F5977D222E9F08C00FC1025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F5977A622E9F08B00FC1025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F5977AD22E9F08B00FC1025;
+			remoteInfo = "FFTTextField-OC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F5977AE22E9F08B00FC1025 /* FFTTextField-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFTTextField-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5977B122E9F08B00FC1025 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F5977B222E9F08B00FC1025 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F5977B422E9F08B00FC1025 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F5977B522E9F08B00FC1025 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F5977B822E9F08B00FC1025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F5977BA22E9F08C00FC1025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F5977BD22E9F08C00FC1025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F5977BF22E9F08C00FC1025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5977C022E9F08C00FC1025 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F5977C622E9F08C00FC1025 /* FFTTextField-OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFTTextField-OCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5977CA22E9F08C00FC1025 /* FFTTextField_OCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFTTextField_OCTests.m; sourceTree = "<group>"; };
+		2F5977CC22E9F08C00FC1025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5977D122E9F08C00FC1025 /* FFTTextField-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFTTextField-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5977D522E9F08C00FC1025 /* FFTTextField_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFTTextField_OCUITests.m; sourceTree = "<group>"; };
+		2F5977D722E9F08C00FC1025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5977E422E9F12900FC1025 /* UITextField+FFT_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FFT_Category.m"; sourceTree = "<group>"; };
+		2F5977E522E9F12900FC1025 /* UITextField+FFT_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+FFT_Category.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F5977AB22E9F08B00FC1025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5977C322E9F08C00FC1025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5977CE22E9F08C00FC1025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F5977A522E9F08B00FC1025 = {
+			isa = PBXGroup;
+			children = (
+				2F5977B022E9F08B00FC1025 /* FFTTextField-OC */,
+				2F5977C922E9F08C00FC1025 /* FFTTextField-OCTests */,
+				2F5977D422E9F08C00FC1025 /* FFTTextField-OCUITests */,
+				2F5977AF22E9F08B00FC1025 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F5977AF22E9F08B00FC1025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F5977AE22E9F08B00FC1025 /* FFTTextField-OC.app */,
+				2F5977C622E9F08C00FC1025 /* FFTTextField-OCTests.xctest */,
+				2F5977D122E9F08C00FC1025 /* FFTTextField-OCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F5977B022E9F08B00FC1025 /* FFTTextField-OC */ = {
+			isa = PBXGroup;
+			children = (
+				2F5977B122E9F08B00FC1025 /* AppDelegate.h */,
+				2F5977B222E9F08B00FC1025 /* AppDelegate.m */,
+				2F5977B422E9F08B00FC1025 /* ViewController.h */,
+				2F5977B522E9F08B00FC1025 /* ViewController.m */,
+				2F5977E322E9F12900FC1025 /* FFTTextField */,
+				2F5977B722E9F08B00FC1025 /* Main.storyboard */,
+				2F5977BA22E9F08C00FC1025 /* Assets.xcassets */,
+				2F5977BC22E9F08C00FC1025 /* LaunchScreen.storyboard */,
+				2F5977BF22E9F08C00FC1025 /* Info.plist */,
+				2F5977C022E9F08C00FC1025 /* main.m */,
+			);
+			path = "FFTTextField-OC";
+			sourceTree = "<group>";
+		};
+		2F5977C922E9F08C00FC1025 /* FFTTextField-OCTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F5977CA22E9F08C00FC1025 /* FFTTextField_OCTests.m */,
+				2F5977CC22E9F08C00FC1025 /* Info.plist */,
+			);
+			path = "FFTTextField-OCTests";
+			sourceTree = "<group>";
+		};
+		2F5977D422E9F08C00FC1025 /* FFTTextField-OCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F5977D522E9F08C00FC1025 /* FFTTextField_OCUITests.m */,
+				2F5977D722E9F08C00FC1025 /* Info.plist */,
+			);
+			path = "FFTTextField-OCUITests";
+			sourceTree = "<group>";
+		};
+		2F5977E322E9F12900FC1025 /* FFTTextField */ = {
+			isa = PBXGroup;
+			children = (
+				2F5977E522E9F12900FC1025 /* UITextField+FFT_Category.h */,
+				2F5977E422E9F12900FC1025 /* UITextField+FFT_Category.m */,
+			);
+			path = FFTTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F5977AD22E9F08B00FC1025 /* FFTTextField-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5977DA22E9F08C00FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-OC" */;
+			buildPhases = (
+				2F5977AA22E9F08B00FC1025 /* Sources */,
+				2F5977AB22E9F08B00FC1025 /* Frameworks */,
+				2F5977AC22E9F08B00FC1025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FFTTextField-OC";
+			productName = "FFTTextField-OC";
+			productReference = 2F5977AE22E9F08B00FC1025 /* FFTTextField-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F5977C522E9F08C00FC1025 /* FFTTextField-OCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5977DD22E9F08C00FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-OCTests" */;
+			buildPhases = (
+				2F5977C222E9F08C00FC1025 /* Sources */,
+				2F5977C322E9F08C00FC1025 /* Frameworks */,
+				2F5977C422E9F08C00FC1025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F5977C822E9F08C00FC1025 /* PBXTargetDependency */,
+			);
+			name = "FFTTextField-OCTests";
+			productName = "FFTTextField-OCTests";
+			productReference = 2F5977C622E9F08C00FC1025 /* FFTTextField-OCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F5977D022E9F08C00FC1025 /* FFTTextField-OCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5977E022E9F08C00FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-OCUITests" */;
+			buildPhases = (
+				2F5977CD22E9F08C00FC1025 /* Sources */,
+				2F5977CE22E9F08C00FC1025 /* Frameworks */,
+				2F5977CF22E9F08C00FC1025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F5977D322E9F08C00FC1025 /* PBXTargetDependency */,
+			);
+			name = "FFTTextField-OCUITests";
+			productName = "FFTTextField-OCUITests";
+			productReference = 2F5977D122E9F08C00FC1025 /* FFTTextField-OCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F5977A622E9F08B00FC1025 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "四五20";
+				TargetAttributes = {
+					2F5977AD22E9F08B00FC1025 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					2F5977C522E9F08C00FC1025 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2F5977AD22E9F08B00FC1025;
+					};
+					2F5977D022E9F08C00FC1025 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2F5977AD22E9F08B00FC1025;
+					};
+				};
+			};
+			buildConfigurationList = 2F5977A922E9F08B00FC1025 /* Build configuration list for PBXProject "FFTTextField-OC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F5977A522E9F08B00FC1025;
+			productRefGroup = 2F5977AF22E9F08B00FC1025 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F5977AD22E9F08B00FC1025 /* FFTTextField-OC */,
+				2F5977C522E9F08C00FC1025 /* FFTTextField-OCTests */,
+				2F5977D022E9F08C00FC1025 /* FFTTextField-OCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F5977AC22E9F08B00FC1025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5977BE22E9F08C00FC1025 /* LaunchScreen.storyboard in Resources */,
+				2F5977BB22E9F08C00FC1025 /* Assets.xcassets in Resources */,
+				2F5977B922E9F08B00FC1025 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5977C422E9F08C00FC1025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5977CF22E9F08C00FC1025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F5977AA22E9F08B00FC1025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5977E622E9F12900FC1025 /* UITextField+FFT_Category.m in Sources */,
+				2F5977B622E9F08B00FC1025 /* ViewController.m in Sources */,
+				2F5977C122E9F08C00FC1025 /* main.m in Sources */,
+				2F5977B322E9F08B00FC1025 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5977C222E9F08C00FC1025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5977CB22E9F08C00FC1025 /* FFTTextField_OCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5977CD22E9F08C00FC1025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5977D622E9F08C00FC1025 /* FFTTextField_OCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F5977C822E9F08C00FC1025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F5977AD22E9F08B00FC1025 /* FFTTextField-OC */;
+			targetProxy = 2F5977C722E9F08C00FC1025 /* PBXContainerItemProxy */;
+		};
+		2F5977D322E9F08C00FC1025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F5977AD22E9F08B00FC1025 /* FFTTextField-OC */;
+			targetProxy = 2F5977D222E9F08C00FC1025 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F5977B722E9F08B00FC1025 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F5977B822E9F08B00FC1025 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F5977BC22E9F08C00FC1025 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F5977BD22E9F08C00FC1025 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F5977D822E9F08C00FC1025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F5977D922E9F08C00FC1025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F5977DB22E9F08C00FC1025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5FT652ZPF;
+				INFOPLIST_FILE = "FFTTextField-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FFT.FFTTextField-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F5977DC22E9F08C00FC1025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5FT652ZPF;
+				INFOPLIST_FILE = "FFTTextField-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FFT.FFTTextField-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F5977DE22E9F08C00FC1025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFTTextField-OCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FFT.FFTTextField-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFTTextField-OC.app/FFTTextField-OC";
+			};
+			name = Debug;
+		};
+		2F5977DF22E9F08C00FC1025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFTTextField-OCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FFT.FFTTextField-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFTTextField-OC.app/FFTTextField-OC";
+			};
+			name = Release;
+		};
+		2F5977E122E9F08C00FC1025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFTTextField-OCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FFT.FFTTextField-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FFTTextField-OC";
+			};
+			name = Debug;
+		};
+		2F5977E222E9F08C00FC1025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FFTTextField-OCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "FFT.FFTTextField-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FFTTextField-OC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F5977A922E9F08B00FC1025 /* Build configuration list for PBXProject "FFTTextField-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5977D822E9F08C00FC1025 /* Debug */,
+				2F5977D922E9F08C00FC1025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F5977DA22E9F08C00FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5977DB22E9F08C00FC1025 /* Debug */,
+				2F5977DC22E9F08C00FC1025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F5977DD22E9F08C00FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-OCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5977DE22E9F08C00FC1025 /* Debug */,
+				2F5977DF22E9F08C00FC1025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F5977E022E9F08C00FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-OCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5977E122E9F08C00FC1025 /* Debug */,
+				2F5977E222E9F08C00FC1025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F5977A622E9F08B00FC1025 /* Project object */;
+}

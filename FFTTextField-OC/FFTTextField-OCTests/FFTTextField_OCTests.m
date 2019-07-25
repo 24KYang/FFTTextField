@@ -1,18 +1,18 @@
 //
-//  FFTTextFieldTests.m
-//  FFTTextFieldTests
+//  FFTTextField_OCTests.m
+//  FFTTextField-OCTests
 //
-//  Created by 四五20 on 2019/7/18.
+//  Created by 四五20 on 2019/7/25.
 //  Copyright © 2019 四五20. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface FFTTextFieldTests : XCTestCase
+@interface FFTTextField_OCTests : XCTestCase
 
 @end
 
-@implementation FFTTextFieldTests
+@implementation FFTTextField_OCTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.

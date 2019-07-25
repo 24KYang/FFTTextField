@@ -7,64 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FFD080722E7145C001C1ED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD080622E7145C001C1ED3 /* AppDelegate.swift */; };
-		2FFD080922E7145C001C1ED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD080822E7145C001C1ED3 /* ViewController.swift */; };
-		2FFD080C22E7145C001C1ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFD080A22E7145C001C1ED3 /* Main.storyboard */; };
-		2FFD080E22E7145D001C1ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFD080D22E7145D001C1ED3 /* Assets.xcassets */; };
-		2FFD081122E7145D001C1ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFD080F22E7145D001C1ED3 /* LaunchScreen.storyboard */; };
-		2FFD081C22E7145D001C1ED3 /* FFTTextField_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD081B22E7145D001C1ED3 /* FFTTextField_SwiftTests.swift */; };
-		2FFD082722E7145D001C1ED3 /* FFTTextField_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFD082622E7145D001C1ED3 /* FFTTextField_SwiftUITests.swift */; };
+		2F5977F422E9F16800FC1025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977F322E9F16800FC1025 /* AppDelegate.swift */; };
+		2F5977F622E9F16800FC1025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5977F522E9F16800FC1025 /* ViewController.swift */; };
+		2F5977F922E9F16800FC1025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5977F722E9F16800FC1025 /* Main.storyboard */; };
+		2F5977FB22E9F16900FC1025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5977FA22E9F16900FC1025 /* Assets.xcassets */; };
+		2F5977FE22E9F16900FC1025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5977FC22E9F16900FC1025 /* LaunchScreen.storyboard */; };
+		2F59780922E9F16900FC1025 /* FFTTextField_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59780822E9F16900FC1025 /* FFTTextField_SwiftTests.swift */; };
+		2F59781422E9F16900FC1025 /* FFTTextField_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59781322E9F16900FC1025 /* FFTTextField_SwiftUITests.swift */; };
+		2F59782322E9F19200FC1025 /* FFTTextField+FFT_Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59782222E9F19200FC1025 /* FFTTextField+FFT_Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2FFD081822E7145D001C1ED3 /* PBXContainerItemProxy */ = {
+		2F59780522E9F16900FC1025 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2FFD07FB22E7145C001C1ED3 /* Project object */;
+			containerPortal = 2F5977E822E9F16800FC1025 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2FFD080222E7145C001C1ED3;
+			remoteGlobalIDString = 2F5977EF22E9F16800FC1025;
 			remoteInfo = "FFTTextField-Swift";
 		};
-		2FFD082322E7145D001C1ED3 /* PBXContainerItemProxy */ = {
+		2F59781022E9F16900FC1025 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2FFD07FB22E7145C001C1ED3 /* Project object */;
+			containerPortal = 2F5977E822E9F16800FC1025 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2FFD080222E7145C001C1ED3;
+			remoteGlobalIDString = 2F5977EF22E9F16800FC1025;
 			remoteInfo = "FFTTextField-Swift";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2FFD080322E7145C001C1ED3 /* FFTTextField-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFTTextField-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FFD080622E7145C001C1ED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FFD080822E7145C001C1ED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2FFD080B22E7145C001C1ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2FFD080D22E7145D001C1ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2FFD081022E7145D001C1ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2FFD081222E7145D001C1ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FFD081722E7145D001C1ED3 /* FFTTextField-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFTTextField-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FFD081B22E7145D001C1ED3 /* FFTTextField_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTTextField_SwiftTests.swift; sourceTree = "<group>"; };
-		2FFD081D22E7145D001C1ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FFD082222E7145D001C1ED3 /* FFTTextField-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFTTextField-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FFD082622E7145D001C1ED3 /* FFTTextField_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTTextField_SwiftUITests.swift; sourceTree = "<group>"; };
-		2FFD082822E7145D001C1ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5977F022E9F16800FC1025 /* FFTTextField-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFTTextField-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5977F322E9F16800FC1025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F5977F522E9F16800FC1025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F5977F822E9F16800FC1025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F5977FA22E9F16900FC1025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F5977FD22E9F16900FC1025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F5977FF22E9F16900FC1025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F59780422E9F16900FC1025 /* FFTTextField-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFTTextField-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F59780822E9F16900FC1025 /* FFTTextField_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTTextField_SwiftTests.swift; sourceTree = "<group>"; };
+		2F59780A22E9F16900FC1025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F59780F22E9F16900FC1025 /* FFTTextField-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FFTTextField-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F59781322E9F16900FC1025 /* FFTTextField_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTTextField_SwiftUITests.swift; sourceTree = "<group>"; };
+		2F59781522E9F16900FC1025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F59782222E9F19200FC1025 /* FFTTextField+FFT_Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFTTextField+FFT_Category.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FFD080022E7145C001C1ED3 /* Frameworks */ = {
+		2F5977ED22E9F16800FC1025 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FFD081422E7145D001C1ED3 /* Frameworks */ = {
+		2F59780122E9F16900FC1025 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FFD081F22E7145D001C1ED3 /* Frameworks */ = {
+		2F59780C22E9F16900FC1025 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,67 +76,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FFD07FA22E7145C001C1ED3 = {
+		2F5977E722E9F16800FC1025 = {
 			isa = PBXGroup;
 			children = (
-				2FFD080522E7145C001C1ED3 /* FFTTextField-Swift */,
-				2FFD081A22E7145D001C1ED3 /* FFTTextField-SwiftTests */,
-				2FFD082522E7145D001C1ED3 /* FFTTextField-SwiftUITests */,
-				2FFD080422E7145C001C1ED3 /* Products */,
+				2F5977F222E9F16800FC1025 /* FFTTextField-Swift */,
+				2F59780722E9F16900FC1025 /* FFTTextField-SwiftTests */,
+				2F59781222E9F16900FC1025 /* FFTTextField-SwiftUITests */,
+				2F5977F122E9F16800FC1025 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2FFD080422E7145C001C1ED3 /* Products */ = {
+		2F5977F122E9F16800FC1025 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FFD080322E7145C001C1ED3 /* FFTTextField-Swift.app */,
-				2FFD081722E7145D001C1ED3 /* FFTTextField-SwiftTests.xctest */,
-				2FFD082222E7145D001C1ED3 /* FFTTextField-SwiftUITests.xctest */,
+				2F5977F022E9F16800FC1025 /* FFTTextField-Swift.app */,
+				2F59780422E9F16900FC1025 /* FFTTextField-SwiftTests.xctest */,
+				2F59780F22E9F16900FC1025 /* FFTTextField-SwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FFD080522E7145C001C1ED3 /* FFTTextField-Swift */ = {
+		2F5977F222E9F16800FC1025 /* FFTTextField-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				2FFD080622E7145C001C1ED3 /* AppDelegate.swift */,
-				2FFD080822E7145C001C1ED3 /* ViewController.swift */,
-				2FFD080A22E7145C001C1ED3 /* Main.storyboard */,
-				2FFD080D22E7145D001C1ED3 /* Assets.xcassets */,
-				2FFD080F22E7145D001C1ED3 /* LaunchScreen.storyboard */,
-				2FFD081222E7145D001C1ED3 /* Info.plist */,
+				2F5977F322E9F16800FC1025 /* AppDelegate.swift */,
+				2F5977F522E9F16800FC1025 /* ViewController.swift */,
+				2F59782122E9F19200FC1025 /* FFTTextField */,
+				2F5977F722E9F16800FC1025 /* Main.storyboard */,
+				2F5977FA22E9F16900FC1025 /* Assets.xcassets */,
+				2F5977FC22E9F16900FC1025 /* LaunchScreen.storyboard */,
+				2F5977FF22E9F16900FC1025 /* Info.plist */,
 			);
 			path = "FFTTextField-Swift";
 			sourceTree = "<group>";
 		};
-		2FFD081A22E7145D001C1ED3 /* FFTTextField-SwiftTests */ = {
+		2F59780722E9F16900FC1025 /* FFTTextField-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				2FFD081B22E7145D001C1ED3 /* FFTTextField_SwiftTests.swift */,
-				2FFD081D22E7145D001C1ED3 /* Info.plist */,
+				2F59780822E9F16900FC1025 /* FFTTextField_SwiftTests.swift */,
+				2F59780A22E9F16900FC1025 /* Info.plist */,
 			);
 			path = "FFTTextField-SwiftTests";
 			sourceTree = "<group>";
 		};
-		2FFD082522E7145D001C1ED3 /* FFTTextField-SwiftUITests */ = {
+		2F59781222E9F16900FC1025 /* FFTTextField-SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2FFD082622E7145D001C1ED3 /* FFTTextField_SwiftUITests.swift */,
-				2FFD082822E7145D001C1ED3 /* Info.plist */,
+				2F59781322E9F16900FC1025 /* FFTTextField_SwiftUITests.swift */,
+				2F59781522E9F16900FC1025 /* Info.plist */,
 			);
 			path = "FFTTextField-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		2F59782122E9F19200FC1025 /* FFTTextField */ = {
+			isa = PBXGroup;
+			children = (
+				2F59782222E9F19200FC1025 /* FFTTextField+FFT_Category.swift */,
+			);
+			path = FFTTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FFD080222E7145C001C1ED3 /* FFTTextField-Swift */ = {
+		2F5977EF22E9F16800FC1025 /* FFTTextField-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FFD082B22E7145D001C1ED3 /* Build configuration list for PBXNativeTarget "FFTTextField-Swift" */;
+			buildConfigurationList = 2F59781822E9F16900FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-Swift" */;
 			buildPhases = (
-				2FFD07FF22E7145C001C1ED3 /* Sources */,
-				2FFD080022E7145C001C1ED3 /* Frameworks */,
-				2FFD080122E7145C001C1ED3 /* Resources */,
+				2F5977EC22E9F16800FC1025 /* Sources */,
+				2F5977ED22E9F16800FC1025 /* Frameworks */,
+				2F5977EE22E9F16800FC1025 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,69 +153,69 @@
 			);
 			name = "FFTTextField-Swift";
 			productName = "FFTTextField-Swift";
-			productReference = 2FFD080322E7145C001C1ED3 /* FFTTextField-Swift.app */;
+			productReference = 2F5977F022E9F16800FC1025 /* FFTTextField-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2FFD081622E7145D001C1ED3 /* FFTTextField-SwiftTests */ = {
+		2F59780322E9F16900FC1025 /* FFTTextField-SwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FFD082E22E7145D001C1ED3 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftTests" */;
+			buildConfigurationList = 2F59781B22E9F16900FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftTests" */;
 			buildPhases = (
-				2FFD081322E7145D001C1ED3 /* Sources */,
-				2FFD081422E7145D001C1ED3 /* Frameworks */,
-				2FFD081522E7145D001C1ED3 /* Resources */,
+				2F59780022E9F16900FC1025 /* Sources */,
+				2F59780122E9F16900FC1025 /* Frameworks */,
+				2F59780222E9F16900FC1025 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2FFD081922E7145D001C1ED3 /* PBXTargetDependency */,
+				2F59780622E9F16900FC1025 /* PBXTargetDependency */,
 			);
 			name = "FFTTextField-SwiftTests";
 			productName = "FFTTextField-SwiftTests";
-			productReference = 2FFD081722E7145D001C1ED3 /* FFTTextField-SwiftTests.xctest */;
+			productReference = 2F59780422E9F16900FC1025 /* FFTTextField-SwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2FFD082122E7145D001C1ED3 /* FFTTextField-SwiftUITests */ = {
+		2F59780E22E9F16900FC1025 /* FFTTextField-SwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FFD083122E7145D001C1ED3 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftUITests" */;
+			buildConfigurationList = 2F59781E22E9F16900FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftUITests" */;
 			buildPhases = (
-				2FFD081E22E7145D001C1ED3 /* Sources */,
-				2FFD081F22E7145D001C1ED3 /* Frameworks */,
-				2FFD082022E7145D001C1ED3 /* Resources */,
+				2F59780B22E9F16900FC1025 /* Sources */,
+				2F59780C22E9F16900FC1025 /* Frameworks */,
+				2F59780D22E9F16900FC1025 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2FFD082422E7145D001C1ED3 /* PBXTargetDependency */,
+				2F59781122E9F16900FC1025 /* PBXTargetDependency */,
 			);
 			name = "FFTTextField-SwiftUITests";
 			productName = "FFTTextField-SwiftUITests";
-			productReference = 2FFD082222E7145D001C1ED3 /* FFTTextField-SwiftUITests.xctest */;
+			productReference = 2F59780F22E9F16900FC1025 /* FFTTextField-SwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2FFD07FB22E7145C001C1ED3 /* Project object */ = {
+		2F5977E822E9F16800FC1025 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "四五20";
 				TargetAttributes = {
-					2FFD080222E7145C001C1ED3 = {
+					2F5977EF22E9F16800FC1025 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					2FFD081622E7145D001C1ED3 = {
+					2F59780322E9F16900FC1025 = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 2FFD080222E7145C001C1ED3;
+						TestTargetID = 2F5977EF22E9F16800FC1025;
 					};
-					2FFD082122E7145D001C1ED3 = {
+					2F59780E22E9F16900FC1025 = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 2FFD080222E7145C001C1ED3;
+						TestTargetID = 2F5977EF22E9F16800FC1025;
 					};
 				};
 			};
-			buildConfigurationList = 2FFD07FE22E7145C001C1ED3 /* Build configuration list for PBXProject "FFTTextField-Swift" */;
+			buildConfigurationList = 2F5977EB22E9F16800FC1025 /* Build configuration list for PBXProject "FFTTextField-Swift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,37 +223,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 2FFD07FA22E7145C001C1ED3;
-			productRefGroup = 2FFD080422E7145C001C1ED3 /* Products */;
+			mainGroup = 2F5977E722E9F16800FC1025;
+			productRefGroup = 2F5977F122E9F16800FC1025 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FFD080222E7145C001C1ED3 /* FFTTextField-Swift */,
-				2FFD081622E7145D001C1ED3 /* FFTTextField-SwiftTests */,
-				2FFD082122E7145D001C1ED3 /* FFTTextField-SwiftUITests */,
+				2F5977EF22E9F16800FC1025 /* FFTTextField-Swift */,
+				2F59780322E9F16900FC1025 /* FFTTextField-SwiftTests */,
+				2F59780E22E9F16900FC1025 /* FFTTextField-SwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2FFD080122E7145C001C1ED3 /* Resources */ = {
+		2F5977EE22E9F16800FC1025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FFD081122E7145D001C1ED3 /* LaunchScreen.storyboard in Resources */,
-				2FFD080E22E7145D001C1ED3 /* Assets.xcassets in Resources */,
-				2FFD080C22E7145C001C1ED3 /* Main.storyboard in Resources */,
+				2F5977FE22E9F16900FC1025 /* LaunchScreen.storyboard in Resources */,
+				2F5977FB22E9F16900FC1025 /* Assets.xcassets in Resources */,
+				2F5977F922E9F16800FC1025 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FFD081522E7145D001C1ED3 /* Resources */ = {
+		2F59780222E9F16900FC1025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FFD082022E7145D001C1ED3 /* Resources */ = {
+		2F59780D22E9F16900FC1025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +263,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2FFD07FF22E7145C001C1ED3 /* Sources */ = {
+		2F5977EC22E9F16800FC1025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FFD080922E7145C001C1ED3 /* ViewController.swift in Sources */,
-				2FFD080722E7145C001C1ED3 /* AppDelegate.swift in Sources */,
+				2F5977F622E9F16800FC1025 /* ViewController.swift in Sources */,
+				2F5977F422E9F16800FC1025 /* AppDelegate.swift in Sources */,
+				2F59782322E9F19200FC1025 /* FFTTextField+FFT_Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FFD081322E7145D001C1ED3 /* Sources */ = {
+		2F59780022E9F16900FC1025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FFD081C22E7145D001C1ED3 /* FFTTextField_SwiftTests.swift in Sources */,
+				2F59780922E9F16900FC1025 /* FFTTextField_SwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FFD081E22E7145D001C1ED3 /* Sources */ = {
+		2F59780B22E9F16900FC1025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FFD082722E7145D001C1ED3 /* FFTTextField_SwiftUITests.swift in Sources */,
+				2F59781422E9F16900FC1025 /* FFTTextField_SwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2FFD081922E7145D001C1ED3 /* PBXTargetDependency */ = {
+		2F59780622E9F16900FC1025 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2FFD080222E7145C001C1ED3 /* FFTTextField-Swift */;
-			targetProxy = 2FFD081822E7145D001C1ED3 /* PBXContainerItemProxy */;
+			target = 2F5977EF22E9F16800FC1025 /* FFTTextField-Swift */;
+			targetProxy = 2F59780522E9F16900FC1025 /* PBXContainerItemProxy */;
 		};
-		2FFD082422E7145D001C1ED3 /* PBXTargetDependency */ = {
+		2F59781122E9F16900FC1025 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2FFD080222E7145C001C1ED3 /* FFTTextField-Swift */;
-			targetProxy = 2FFD082322E7145D001C1ED3 /* PBXContainerItemProxy */;
+			target = 2F5977EF22E9F16800FC1025 /* FFTTextField-Swift */;
+			targetProxy = 2F59781022E9F16900FC1025 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2FFD080A22E7145C001C1ED3 /* Main.storyboard */ = {
+		2F5977F722E9F16800FC1025 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FFD080B22E7145C001C1ED3 /* Base */,
+				2F5977F822E9F16800FC1025 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2FFD080F22E7145D001C1ED3 /* LaunchScreen.storyboard */ = {
+		2F5977FC22E9F16900FC1025 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FFD081022E7145D001C1ED3 /* Base */,
+				2F5977FD22E9F16900FC1025 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +324,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2FFD082922E7145D001C1ED3 /* Debug */ = {
+		2F59781622E9F16900FC1025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,7 +385,7 @@
 			};
 			name = Debug;
 		};
-		2FFD082A22E7145D001C1ED3 /* Release */ = {
+		2F59781722E9F16900FC1025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,14 +440,14 @@
 			};
 			name = Release;
 		};
-		2FFD082C22E7145D001C1ED3 /* Debug */ = {
+		2F59781922E9F16900FC1025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5FT652ZPF;
 				INFOPLIST_FILE = "FFTTextField-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,14 +459,14 @@
 			};
 			name = Debug;
 		};
-		2FFD082D22E7145D001C1ED3 /* Release */ = {
+		2F59781A22E9F16900FC1025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5FT652ZPF;
 				INFOPLIST_FILE = "FFTTextField-Swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +478,7 @@
 			};
 			name = Release;
 		};
-		2FFD082F22E7145D001C1ED3 /* Debug */ = {
+		2F59781C22E9F16900FC1025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,7 +498,7 @@
 			};
 			name = Debug;
 		};
-		2FFD083022E7145D001C1ED3 /* Release */ = {
+		2F59781D22E9F16900FC1025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -506,7 +518,7 @@
 			};
 			name = Release;
 		};
-		2FFD083222E7145D001C1ED3 /* Debug */ = {
+		2F59781F22E9F16900FC1025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -525,7 +537,7 @@
 			};
 			name = Debug;
 		};
-		2FFD083322E7145D001C1ED3 /* Release */ = {
+		2F59782022E9F16900FC1025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -547,43 +559,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FFD07FE22E7145C001C1ED3 /* Build configuration list for PBXProject "FFTTextField-Swift" */ = {
+		2F5977EB22E9F16800FC1025 /* Build configuration list for PBXProject "FFTTextField-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FFD082922E7145D001C1ED3 /* Debug */,
-				2FFD082A22E7145D001C1ED3 /* Release */,
+				2F59781622E9F16900FC1025 /* Debug */,
+				2F59781722E9F16900FC1025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FFD082B22E7145D001C1ED3 /* Build configuration list for PBXNativeTarget "FFTTextField-Swift" */ = {
+		2F59781822E9F16900FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FFD082C22E7145D001C1ED3 /* Debug */,
-				2FFD082D22E7145D001C1ED3 /* Release */,
+				2F59781922E9F16900FC1025 /* Debug */,
+				2F59781A22E9F16900FC1025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FFD082E22E7145D001C1ED3 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftTests" */ = {
+		2F59781B22E9F16900FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FFD082F22E7145D001C1ED3 /* Debug */,
-				2FFD083022E7145D001C1ED3 /* Release */,
+				2F59781C22E9F16900FC1025 /* Debug */,
+				2F59781D22E9F16900FC1025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FFD083122E7145D001C1ED3 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftUITests" */ = {
+		2F59781E22E9F16900FC1025 /* Build configuration list for PBXNativeTarget "FFTTextField-SwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FFD083222E7145D001C1ED3 /* Debug */,
-				2FFD083322E7145D001C1ED3 /* Release */,
+				2F59781F22E9F16900FC1025 /* Debug */,
+				2F59782022E9F16900FC1025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2FFD07FB22E7145C001C1ED3 /* Project object */;
+	rootObject = 2F5977E822E9F16800FC1025 /* Project object */;
 }

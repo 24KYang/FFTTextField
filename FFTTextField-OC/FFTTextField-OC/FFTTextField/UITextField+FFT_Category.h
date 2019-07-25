@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, FFTInputType) {
+typedef NS_OPTIONS(NSUInteger, FFTInputType) {
     FFTInputTypeCustom = 1 << 0,
     FFTInputTypeNumber = 1 << 1,
     FFTInputTypeCapitalLetters = 1 << 2,
