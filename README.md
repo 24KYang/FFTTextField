@@ -8,8 +8,11 @@
 ## Object-C
 
 ### 使用方式
+
 1.引入头文件`UITextField+FFT_Category.h`
+
 2.签代理、实现代理即可
+
 注:`- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string; `暂时只实现了这一个代理
 
 ### fft_max
@@ -71,8 +74,11 @@ textField.fft_inputType = FFTInputTypeCapitalLetters | FFTInputTypeLowercaseLett
 ```
 
 ### fft_enableInputs
+
 自由组合
+
 介绍枚举的时候没有介绍自定义这种类型，因为当初设计这种类型的时候就是要配合`fft_enableInputs`属性一起使用的
+
 ```
 textField.delegate = self;
 
@@ -85,7 +91,9 @@ textField.fft_enableInputs = @[@"这是一段测试文字"];
 ## Swift
 
 ### 使用方式
+
 1.签代理、实现代理即可
+
 注:`func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool`暂时只实现了这一个代理
 
 #### fft_max
