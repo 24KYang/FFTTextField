@@ -84,15 +84,32 @@ extension UITextField {
         
         self.fft_delegate(delegate: delegate)
         
-        let delegateClass : AnyClass = (self.delegate?.superclass)!
+        let obj : AnyObject = delegate as AnyObject
         
-        
-        fft_exchangeMethod(originalClass: delegateClass, originalSel: #selector(delegate.textField(_:shouldChangeCharactersIn:replacementString:)), replacedClass: self.superclass!, replacedSel: #selector(fft_textField(_:shouldChangeCharactersIn:replacementString:)))
+        let cls : AnyClass = obj.classForCoder
+
+        fft_exchangeMethod(originalClass: cls, originalSel: #selector(delegate.textField(_:shouldChangeCharactersIn:replacementString:)), replacedClass: self.classForCoder, replacedSel: #selector(fft_textField(_:shouldChangeCharactersIn:replacementString:)))
     }
     
     // MARK: textField文字改变
     @objc func fft_textFieldDidChange(textfield : UITextField) {
-        print("\(String(describing: textfield.text))")
+        var text : String = self.fft_filterStringWithType(type: textfield.fft_inputType, string: textfield.text!)
+
+        if (text.count > Int(textfield.fft_max) && textfield.fft_max > 0) {
+            //判断是否有高亮
+            //有高亮不做截取
+            //无高亮根据最大位数做截取
+            let range : UITextRange? = textfield.markedTextRange
+            
+            if range != nil {
+                let position : UITextPosition? = textfield.position(from: range!.start, offset: 0)!
+                
+                if position == nil {
+                    text = (text as NSString).substring(to: Int(textfield.fft_max))
+                }
+            }
+        }
+        textfield.text = text
     }
     
     // MARK: 交换方法
@@ -109,7 +126,7 @@ extension UITextField {
         
         classList.add(className)
         
-        let originalMethod : Method = class_getInstanceMethod(originalClass, originalSel)!
+        let originalMethod : Method? = class_getInstanceMethod(originalClass, originalSel)
         
         let replacedMethod : Method = class_getInstanceMethod(replacedClass, replacedSel)!
         
@@ -118,26 +135,59 @@ extension UITextField {
         let didAddMethod : Bool = class_addMethod(originalClass, replacedSel, replacedMethodIMP, method_getTypeEncoding(replacedMethod))
         
         if didAddMethod {
-            print("class_addMethod failure --> \(NSStringFromSelector(replacedSel))")
-        }else {
-            print("class_addMethod succeed --> \(NSStringFromSelector(replacedSel))")
+            let newMethod : Method = class_getInstanceMethod(originalClass, replacedSel)!
+            
+            if (originalMethod != nil) {
+                method_exchangeImplementations(originalMethod!, newMethod)
+            }
         }
-        
-        let newMethod : Method = class_getInstanceMethod(originalClass, replacedSel)!
-        
-        method_exchangeImplementations(originalMethod, newMethod)
     }
     
     
     // MARK: 交换系统方法
     @objc private func fft_textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print("我已经交换了这个方法了")
-        
-        if self.responds(to: #selector(fft_textField(_:shouldChangeCharactersIn:replacementString:))) {
-            //未设置最大输入位数则调用系统方法 用户可以自己实现此代
+        if textField.fft_max > 0 && textField.text!.count > 0 {
+            //当输入框内的文字长度与可输入最大值相同
+            //且当前输入文字长度大于0(非删除
+            //且输入框当前无高亮(系统键盘的联想功能)
+            if ((textField.text!.count ) == Int(textField.fft_max) && !string.isEmpty && (textField.markedTextRange == nil)) {
+                return false
+            }
+            return true
+        }
+
+        if (self.responds(to: #selector(fft_textField(_:shouldChangeCharactersIn:replacementString:)))) {
+            //未设置最大输入位数则调用系统方法 用户可以自己实现此代理
             return self.fft_textField(textField, shouldChangeCharactersIn: range, replacementString: string)
         }else {
             return true
         }
     }
+    
+    private func fft_filterStringWithType(type : FFTInputType, string : String) -> String {
+        var filter_string : String = ""
+        
+        switch type {
+        case .capitalLetters:
+            filter_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        case .lowercaseLetters:
+           filter_string = "abcdefghijklmnopqrstuvwxyz"
+        case .letters:
+            filter_string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        case .number:
+            filter_string = "0123456789"
+        case .custom:
+            filter_string = self.fft_enableInputs.joined(separator: "")
+        }
+        
+        if !filter_string.isEmpty {
+            let characterSet = NSCharacterSet.init(charactersIn: filter_string)
+            let specCharacterSet = characterSet.inverted
+            let array : Array = string.components(separatedBy: specCharacterSet)
+            return array.joined(separator: "")
+        }
+        
+        return filter_string
+    }
+    
 }

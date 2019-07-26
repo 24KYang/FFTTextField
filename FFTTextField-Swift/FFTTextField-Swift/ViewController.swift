@@ -19,17 +19,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func loadUI() {
         self.view.backgroundColor = UIColor.white
         
-        let fd = UITextField.init(frame: CGRect(x:100, y:100, width:100, height:30))
+        let textField = UITextField.init(frame: CGRect(x:100, y:100, width:100, height:30))
         
-        fd.borderStyle = UITextField.BorderStyle.roundedRect
+        textField.borderStyle = UITextField.BorderStyle.roundedRect
         
-        fd.delegate = self
+        textField.delegate = self
         
-        view.addSubview(fd)
+        textField.fft_max = 5
+        
+        textField.fft_inputType = .number
+        
+        view.addSubview(textField)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print("我是系统的方法")
         return true
     }
     

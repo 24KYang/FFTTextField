@@ -67,14 +67,12 @@ static void fft_exchangeMethod(Class originalClass, SEL originalSel, Class repla
     BOOL didAddMethod = class_addMethod(originalClass, replacedSel, replacedMethodIMP, method_getTypeEncoding(replacedMetohd));
     
     if (didAddMethod) {
-        NSLog(@"class_addMethod failure --> (%@)", NSStringFromSelector(replacedSel));
-    }else {
-        NSLog(@"class_addMethod succeed --> (%@)", NSStringFromSelector(replacedSel));
+        Method newMethod = class_getInstanceMethod(originalClass, replacedSel);
+        
+        if (originalMethod) {
+            method_exchangeImplementations(originalMethod, newMethod);            
+        }
     }
-    
-    Method newMethod = class_getInstanceMethod(originalClass, replacedSel);
-    
-    method_exchangeImplementations(originalMethod, newMethod);
 }
 
 #pragma mark ---- 交换方法
